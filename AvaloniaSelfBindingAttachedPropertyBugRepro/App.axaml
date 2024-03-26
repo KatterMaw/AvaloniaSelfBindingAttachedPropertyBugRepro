@@ -1,0 +1,17 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="AvaloniaSelfBindingAttachedPropertyBugRepro.App"
+             xmlns:local="using:AvaloniaSelfBindingAttachedPropertyBugRepro"
+             RequestedThemeVariant="Dark"
+             xmlns:theme="clr-namespace:Sightful.Avalonia.Theme;assembly=ThemesProject">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+        <theme:DefaultTheme/>
+    </Application.Styles>
+</Application>
